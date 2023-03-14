@@ -1,0 +1,90 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/TodasEdicoes.css">
+    <title>AluraFlix</title>
+</head>
+
+<body>
+
+    <div class="film">
+        <section class="introducao">
+            <h1>Aluraflix</h1>
+        </section>
+        <header>
+            <div class="container">
+                <!-- <div class="logo">
+                    <a href=""><img src="https://i.imgur.com/CxMwyTO.png" alt="AluraFlix"></a>
+                </div> -->
+                <div class="buscar-field">
+                    <input list="searchs" id="search">
+                    <datalist id="searchs">
+
+                    </datalist>
+                    <div onclick="buscar()" class="img"><img src="https://image.flaticon.com/icons/png/512/64/64673.png"
+                            alt=""></div>
+                </div>
+                <nav>
+                    <div class="hamburguer">
+                        <input type="checkbox" id="menu-hamburguer" />
+                        <label for="menu-hamburguer">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                    <div id="categorias">
+                        <input type="button" value="Comédia" onclick="categoria('comedia')">
+                        <input type="button" value="Suspense" onclick="categoria('suspense')">
+                        <input type="button" value="Ação" onclick="categoria('acao')">
+                        <input type="button" value="Infantil" onclick="categoria('infantil')">
+                        <input type="button" value="Adicionar filme" onclick="ativarAdicionar()">
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- <section class="adicionar container">
+        <div class="filme">
+            <label for="">
+                Nome do Filme/Serie
+                <input id="nomeFilme" type="text" placeholder="" required>
+            </label>
+            <label for="">
+                Link da Imagem do filme/Serie (.jpg)
+                <input id="imagemBanner" type="url" placeholder="" required>
+            </label>
+            <label for="">
+                Link do Trailer do filme/Serie (Deve ser o link derivado do "Incorporar" do Youtube)
+                <input id="linkTrailer" type="text" placeholder="" required>
+            </label>
+            <label for="">
+                Selecione a categoria:
+                <select name="" id="" required>
+                    <option value="">Selecionar</option>
+                    <option value="acao">Ação</option>
+                    <option value="suspense">Suspense</option>
+                    <option value="infantil">Infantil</option>
+                    <option value="comedia">Comédia</option>
+                </select>
+            </label>
+            <button onclick="adicionar()">Adicionar</button>
+        </div>
+        <span id="closeButton">X</span>
+    </section> -->
+    <section class="iframe-field">
+
+    </section>
+    <main class="filmes container">
+        <div class="container">
+            <script src="script.js"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src="./js/TodasEdicoes.js"></script>
+</body>
+
+</html>

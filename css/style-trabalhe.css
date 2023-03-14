@@ -1,0 +1,341 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: 30px
+    
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+    a {
+        color:#006F80;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+      
+      a:hover {
+     filter:contrast(70%);
+      }
+      
+      #logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      #header {
+        display: flex;
+        height: 5rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      
+        background: #e7e7e7;
+      }
+      
+      #menu {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+      }
+      
+      #menu a {
+        display: block;
+        padding: 0.5rem;
+      }
+      
+      #btn-mobile {
+        display: none;
+      }
+      
+      @media (max-width: 600px) {
+        #menu {
+          display: block;
+          position: absolute;
+          width: 100%;
+          top: 70px;
+          right: 0px;
+          background: #e7e7e7;
+          transition: 0.6s;
+          z-index: 1000;
+          height: 0px;
+          visibility: hidden;
+          overflow-y: hidden;
+        }
+        #nav.active #menu {
+          height: calc(100vh - 70px);
+          visibility: visible;
+          overflow-y: auto;
+        }
+        #menu a {
+          padding: 1rem 0;
+          margin: 0 1rem;
+          border-bottom: 2px solid #006F80;
+        }
+        #btn-mobile {
+          display: flex;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+          gap: 0.5rem;
+        }
+        #hamburger {
+          border-top: 2px solid;
+          width: 20px;
+        }
+        #hamburger::after,
+        #hamburger::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: currentColor;
+          margin-top: 5px;
+          transition: 0.3s;
+          position: relative;
+        }
+        #nav.active #hamburger {
+          border-top-color: transparent;
+        }
+        #nav.active #hamburger::before {
+          transform: rotate(135deg);
+        }
+        #nav.active #hamburger::after {
+          transform: rotate(-135deg);
+          top: -7px;
+        }
+        #nav button{
+
+            color: #006F80;
+      }
+    
+    }
+
+    
+a{
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+   text-decoration: none;
+   color: #006F80;
+}
+
+.politicaPrivacidade{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.nav-list-footer a{
+  color: #f2f2f2;
+  font-weight:400;
+
+}
+
+
+.NossaGente{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+}
+
+.text-image-nossa-gnt img{
+    max-width: 90vh;
+    border-radius: 2rem;
+}
+
+
+.text-image-nossa-gnt p{
+    max-width: 90vh;
+}
+
+.text-image-nossa-gnt h1{
+  padding-bottom: 5%;
+}
+
+
+.segurito-text{
+    display: flex;
+    flex-direction: row;
+    font-family: 'poppins', sans-serif;
+    text-align: justify;
+}
+
+.texto-mascote-side h1{
+    color: #0F253E;
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.segurito-text img{
+
+    width: 20vh;
+    
+}
+.texto-mascote-side{
+    max-width: 80vh;
+}
+
+.segurito-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-mascote-side{
+    padding-left: 5rem;
+}
+
+.enviecurriculo{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+.enviecurriculo a button{
+    padding: 10px;
+    background-color: #0F253E;
+    color: #ffffff;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 900px){
+    .segurito-text{
+        flex-direction: column;
+    }
+
+    .texto-mascote-side{
+        
+        padding-bottom: 0rem;
+    }
+    .texto-mascote-side{
+        padding-left: 0rem;
+        padding: 2rem;
+    }
+
+}
+
+.homeLink{
+    
+    padding: 2%;
+  }
+
+  
+footer{
+  background-color: #0F253E;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  padding-top: 3%;
+  margin-top: 3%;
+  
+}
+
+.infosMarca{
+  display: flex;
+  justify-content:space-around;
+  color: #ffffff;
+  font-family: 'poppins', sans-serif;
+  background:#112031; 
+  padding: 1%;
+}
+
+.mainFooter{
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  padding-bottom: 2%;
+}
+
+.footerLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoSociais{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+
+.logoSociais img{
+  padding-right: 30%;
+}
+
+
+.footerLeft img{
+  padding-bottom: 10%;
+}
+
+.nav-list-footer li{
+  font-family: 'poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 15%;
+  list-style: none;
+  
+  
+}
+
+
+@media (max-width: 500px){
+
+  .mainFooter{
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+
+.infosMarca{
+  flex-direction: column;
+  padding-top: 10%;
+}
+}
+
+
+
+
+
+
+.nav-list-footer a{
+  color: #f2f2f2;
+}
+
+.infosMarca a{
+  color: #f2f2f2;
+}
+
+
+.DisplayMobile{
+  display: none;
+}
+
+
+@media (max-width: 690px){
+.DisplayMobile{
+  display:block ;
+}
+.displayWeb{
+  display: none;
+}
+}

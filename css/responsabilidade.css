@@ -1,0 +1,269 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box; /* reset */
+}
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    
+}
+
+html{
+    overflow-x:hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+h1,h2,h3,h4,h5, li{
+    font-family: 'poppins', sans-serif; 
+}
+.homeLink{
+    
+    padding: 2%;
+  }
+a {
+    color:#006F80;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  a:hover {
+    filter:contrast(70%);
+  }
+  
+  #logo {
+    padding-top: 1rem;
+  }
+  
+  #header {
+    display: flex;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    background: #e7e7e7;
+  }
+  
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #e7e7e7;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid #006F80;
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+
+    #nav button{
+        color: #0F253E;
+    }
+  }
+
+  
+footer{
+    background-color: #0F253E;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding: 3%;
+    margin-top: 3%;
+    
+}
+
+.infosMarca{
+    display: flex;
+    justify-content:space-around;
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+}
+
+.mainFooter{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoSociais{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoSociais img{
+    padding-right: 30%;
+}
+
+
+.footerLeft img{
+    padding-bottom: 10%;
+}
+
+.nav-list-footer li{
+    font-family: 'poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 15%;
+    list-style: none;
+    
+    
+}
+
+@media (max-width: 500px){
+
+    .mainFooter{
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+
+.infosMarca{
+    flex-direction: column;
+    padding-top: 10%;
+}
+  }
+
+
+  
+.politicaPrivacidade{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #e7e7e7;
+    color: #0F253E;
+  }
+  
+  .nav-list-footer a{
+    color: #f2f2f2;
+    font-weight:400;
+
+  
+  }
+
+.mainResponsabilidade{
+    max-width: 90vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsabilidade{
+    display: flex;
+    justify-content: center;
+}
+
+
+.itemResponsabilidade h2{
+
+color: #006F80;
+font-weight: normal;
+padding-left: 2rem;
+
+
+
+}
+
+
+.itemResponsabilidade h1{
+
+    
+    padding-left: 2rem;
+    padding-top: 5%;
+    
+    
+    
+    }
+
+.itemResponsabilidade img{
+    padding:2%;
+    border-radius: 2rem;
+    
+}
+
+.itemResponsabilidade p{
+    font-family: 'poppins', sans-serif;
+    border-bottom :1px solid rgb(138, 138, 138);
+    padding-bottom: 5%;
+    padding: 1rem;
+    text-align: justify;
+}
+
+
