@@ -256,13 +256,13 @@ button{
 }
 
 
-.equipamentos-porto{
+/* .equipamentos-porto{
     width: 100%;
-    height: 80vh;
+    height: 65vh;
     background-color: #0F253E;
     position: relative;
-}
-.img-equipamento img{
+} */
+/* .img-equipamento img{
     width: 100%;
     height: 100%;
     filter: opacity(40%);
@@ -270,19 +270,27 @@ button{
 }
 
 .text-equipamentos{
-    position: absolute;
+     position: absolute;
     height: 100%;
     width: 100%;
-    top: 5rem;
+    position: static;
     color: aliceblue;
     padding-left: 20%;
     max-width: 60%;
    
-}
+} */
 
-.text-equipamentos h1{
+/* .text-equipamentos h1{
     font-size: 30px;
     color: #4BC6DF;
+} */
+
+.equipamentos-porto{
+    background-image: url(/img/equipamentos-portoAsset\ 5_alterado-01.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
 }
 
 #title-color-1{
