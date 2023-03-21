@@ -33,20 +33,20 @@ function renderizarEdicoes(response){
         titulo = response[i]['titulo']
         corpo = response[i]['corpo']
         data = response[i]['data_str']
+        imagem = response[i]['url_foto']
 
         html +=`
-            <div class="itemResponsabilidade">
-                <h1>
+            <div class="itemResponsabilidade" id="${imagem}">
+                <h1 style="font-size: 1.5rem; padding-left: 5px;">
                     ${titulo}
                 </h1>
                 <h2 class="descriptionResponsabilidade">
                     ${data}
                 </h2>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRT9DIPGiYFhLIv2c5uE4Blp7E5BVyBn_4AWpKl6Y&s" alt="dia mundial da qualidade" width="100%">
+                <img src="./img/${imagem}" alt="${imagem}}" width="100%">
                 <p>
                     ${corpo}
                 </p>
-                <button>leia mais</button>
             </div>
         `;  
         // document.getElementById('div_content').innerHTML = view.render()
@@ -78,7 +78,7 @@ function search() {
 
 function carregar_edicoes(){
     let request = new XMLHttpRequest();
-    request.open('GET', 'http://127.0.0.1:5000/todasEdicoes');
+    request.open('GET', 'https://app.projetos.copiporto.com.br/todasEdicoes');
     request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8')
 
     request.onprogress = function(){
@@ -95,7 +95,7 @@ function carregar_edicoes(){
 
 function carregar_dados(){
     $.ajax({
-        url: 'http://127.0.0.1:5000/todasEdicoes',
+        url: 'https://app.projetos.copiporto.com.br/todasEdicoes',
         type: 'GET',
         dataType: 'json',
         success: function(response) {
