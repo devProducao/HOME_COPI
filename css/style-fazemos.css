@@ -290,7 +290,23 @@ button{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-equipamentos{
+    max-width: 50rem;
+    font-family: 'poppins', sans-serif;
+    color: #ffffff;
+}
+
+.text-equipamentos h1{
+    color: #4BC6DF;
+    font-size: 30px;
 }
 
 #title-color-1{
@@ -542,15 +558,15 @@ button{
     }
 
     .text-equipamentos{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 5rem;
+        /* position: absolute; */
+        /* height: 100%;
+        width: 100%; */
+        /* top: 5rem; */
         color: aliceblue;
         padding-left: 0%;
         padding: 4%;
     
-        max-width: 40rem;
+        /* max-width: 40rem; */
     }
 
     .text-equipamentos p{
