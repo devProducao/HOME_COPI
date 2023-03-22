@@ -427,7 +427,7 @@ button{
 .title-text-envase{
     background-color: #4BC6DF;
     position: absolute;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 4rem;
 }
 
@@ -455,8 +455,8 @@ button{
 }
 
 .title-text-envase{
-    position: absolute;
-    top: 30px;
+    position:static;
+    top: -130px;
 }
 #img1{
     border-top-left-radius: 5rem;
@@ -677,7 +677,7 @@ padding-left: 1rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
     padding-left: 0;
-    padding: 2rem;
+    padding: 3rem;
 
 }
 
